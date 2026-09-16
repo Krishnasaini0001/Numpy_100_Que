@@ -1,11 +1,8 @@
 import numpy as np
 
-arr = np.array([10, 20, 30, 40, 50])
+arr = np.array([10, 25, 40, 55, 70, 85])
 
-value = 30
+filtered = arr[arr > 50]
 
-positions = np.where(arr == value)
-
-print("Array:", arr)
-print("Search value:", value)
-print("Position:", positions[0])
+print("Original array:", arr)
+print("Values greater than 50:", filtered)
